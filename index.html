@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main>
+
+    <section id="report-user">
+
+      <div id="report-user-profile">
+        <div id="profile-image">
+          <img src="images/image-jeremy.png" alt="user-profile">
+        </div>
+        <div>
+          <p>Report for</p>
+          <h3>Jeremy Robson</h3>
+        </div>
+      </div>
+      
+      <div id="report-user-daily">
+        <button class="menu-register active" id="daily"> Daily </button>
+        <button class="menu-register" id="weekly"> Weekly </button>
+        <button class="menu-register" id="monthly"> Monthly </button>
+      </div>
+
+    </section>
+
+    <section id="work">
+      <div id="work-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Work</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <!-- 5hrs 
+          Previous - 7hrs DAY-->
+          <div class="data-hours-history">
+            <p class="hours"> </p>
+            <p class="previous"></p>
+          </div>
+          <!-- 103hrs 
+          Previous - 128hrs MONTH-->
+        </div>
+      
+    </section>
+
+    <section id="play">
+      <div id="play-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Play</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis"> 
+          </div>
+          <!-- 1hr 
+          Previous - 2hrs DAY-->
+          <div class="data-hours-history">
+            <p class="hours"> </p>
+            <p class="previous"></p> 
+          </div>
+          
+          <!-- 23hrs 
+          Previous - 29hrs MONTH-->
+        </div>
+      
+    </section>
+    <section id="study">
+      <div id="study-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Study</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <!-- 0hrs 
+          Previous - 1hr DAY-->
+          <div class="data-hours-history">
+            <p class="hours"> </p>
+            <p class="previous"></p> 
+          </div>
+          
+          <!-- 13hrs 
+          Previous - 19hrs MONTH-->
+        </div>
+      
+    </section>
+
+    <section id="exercise">
+
+      <div id="exercise-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Exercise</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <!-- 1hr 
+          Previous - 1hr DAY-->
+          <div class="data-hours-history">
+            <p class="hours">  </p>
+            <p class="previous"></p>
+          </div>
+          
+          <!-- 11hrs 
+          Previous - 18hrs MONTH-->
+        </div>
+      
+    </section>
+
+    <section id="social">
+      
+      <div id="social-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Social</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <!-- 1hr 
+          Previous - 3hrs DAY-->
+          <div class="data-hours-history">
+            <p class="hours"> </p>
+            <p class="previous"></p> 
+          </div>
+          
+          <!-- 21hrs 
+          Previous - 23hrs MONTH-->
+        </div>
+      
+    </section>
+
+    <section id="self-care">
+      
+      <div id="care-data"></div>
+        <div class="data-hours">
+          <div class="data-hours-title">
+            <p>Self Care</p>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <!-- 0hrs 
+          Previous - 1hr DAY-->
+          <div class="data-hours-history">
+            <p class="hours"> </p>
+            <p class="previous"></p> 
+          </div>
+          
+          <!-- 7hrs 
+          Previous - 11hrs MONTH-->
+        </div>
+
+    </section>
+
+  </main>
+
+<script src="main.js"></script>
+
+</body>
+</html>

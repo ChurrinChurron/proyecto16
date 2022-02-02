@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pratica</title>
+</head>
+<body>
+
+	<form name="fdatos" method="POST">
+		
+		<label>Dinero</label>
+		<input type="number" id="dinero" size="5">
+		<br/>
+		<label>Introduzca un número del 1 al 6</label>
+		<input type="number" id="numero" size="5">
+		<br/>
+		<label>Introduzca su apuesta</label>
+		<input type="number" id="apuesta" size="5">
+		<br/><br/>
+		<input type="button" id="jugar" value="Jugar" />
+		<input type="button" id="comenzar" value="Start" />
+
+	</form>
+	<br/>
+	<div id="salida"></div>
+	
+
+<script type="text/javascript">
+	
+	let dineroComienzo = document.getElementById("dinero");
+	let dinero = document.getElementById("dinero");
+	let numero = document.getElementById("numero");
+	let apuesta = document.getElementById("apuesta");
+	let ganancia = 0;
+	let resultado = document.getElementById("salida");
+	let jugar = document.getElementById("jugar");
+	let comenzar = document.getElementById("comenzar");
+
+	comenzar.addEventListener("click", () => {
+
+		dineroComienzo.value = 100;
+	})
+
+	jugar.addEventListener("click", () => {
+
+		let dado = Math.floor(Math.random() * 5) + 1;
+
+		if(numero == dado) {
+
+		resultado.innerHTML = `El dado sacó ${dado}! Has ganado! ${apuesta.value * 2}`;
+		ganancia = (dinero.value + apuesta.value * 2);
+		dinero.value = ganancia;
+
+		}
+
+		else if(dinero.value < 1) {
+
+			alert("Perdiste todo tu dinero!!");
+
+		}
+
+		else {
+
+		resultado.innerHTML = `El dado sacó ${dado}! Has perdido! ${apuesta.value}`;
+		ganancia = (dinero.value - apuesta.value);
+		dinero.value = ganancia;
+		
+		}
+
+	})
+
+	
+
+</script>
+</body>
+</html>
